@@ -10,8 +10,13 @@ def max_palindrome(string):
 
     max_pal = 0
     first = True
+    counts = {}
 
-    counts = Counter(string)
+    for char in string:
+        if char in counts:
+            counts[char] += 1
+        else:
+            counts[char] = 1
 
     for elem in counts:
 
