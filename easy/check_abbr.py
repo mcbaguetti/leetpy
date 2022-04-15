@@ -1,3 +1,5 @@
+"""527. Word Abbreviation"""
+
 # Given a non-empty string s and an abbreviation abbr, return whether the string matches with the given abbreviation.
 # A string such as "word" contains only the following valid abbreviations:
 # ["word", "1ord", "w1rd", "wo1d", "wor1", "2rd", "w2d", "wo2", "1o1d", "1or1", "w1r1", "1o2", "2r1", "3d", "w3", "4"]
@@ -10,15 +12,17 @@
 # Given s = "apple", abbr = "a2e":
 # Return false.
 
+
 def check_abbr(string, abbr):
 
     i = 0
     j = 0
-    while i < len(string):
-        print("string " + string[i])
-        print("abb " + abbr[j])
 
-        if len(abbr) > len(string):
+    if len(abbr) > len(string):
+        return False
+
+    while i < len(string):
+        if j >= len(abbr):
             return False
 
         if string[i] == abbr[j]:
@@ -36,6 +40,7 @@ def check_abbr(string, abbr):
                 j += 1
 
             num += int(abbr[j])
+
             if num > len(string):
                 return False
             i += num
@@ -46,6 +51,6 @@ def check_abbr(string, abbr):
     return True
 
 
-boolean = check_abbr("internationalization", "i12iz4n")
+boolean = check_abbr("word", "1o1d")
 
 print(boolean)
