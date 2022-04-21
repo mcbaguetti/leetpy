@@ -23,7 +23,7 @@ Constraints:
 """
 
 
-def firstUniqChar(self, s: str) -> int:
+def firstUniqueChar(self, s: str) -> int:
     i = 0
     while i < len(s):
         if s.count(s[i]) == 1:
