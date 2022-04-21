@@ -1,0 +1,20 @@
+Category, Level, Number, Name, Notes
+array, easy, 408, Valid Word Abbreviation, need two indexes: one to check word and the other for the abbreviation; need also isdigit/isalpha function or ascii char number
+array, easy, 387, First Unique Character in a String, use .count() function to solve it but also can use ditionaries for saving counts and then return the only unique char
+array, easy, 349, Intersection of Two Arrays, use a dictionary to save first array then make intersection with the second one (can use set data structure)
+array, easy, 345, Reverse Vowels of a String, need two indexes: one to start at the array's beginning and one at the end; when idxs are aligned with two vowels you can swap them
+array, easy, 434, Number of Segments in a String, check spaces in the array: for each word increment an index; if you find a space continue the loop
+binary_search, easy, 374, Guess Number Higher or Lower, use binary search
+hashmap, easy, 389, Find the Difference, use dictionary to count the strings and return the elem with value 1
+hashmap, easy, 409, Longest Palindrome, use dictionary to count the number of chars and return the even of all counted number (plus one if we have an odd counted char)
+hashmap, easy, 383, Ransom Note, use two dictionaries to count the occurrencies of the two char strings and then compare them to find the differencies
+hashmap, easy, 13, Roman to Integer, use dictionary to map roman numbers to int numbers; need to check if the next number of the string is greater or not
+hashmap, easy, 415, Add Strings, use two dictionaries to map string numbers to int numbers and viceversa
+stacks, easy, 20, Valid Parentheses, use an array that mimics the stack; save in the stack the open brackets and delete them when you find that the opposite is on the top of the stack
+bin, easy, 401, Binary Watch, generate all the times and convert them to two bin number (one for the hour and one for the min); the ones in the bin number are the led you must turn on
+bin, easy, 342, Power of Four, convert to binary and see that a power of four has always one 1 in the leftist digit; the others digits are even 0 (00; 0000; 000000)
+hashmap, easy, 1, Two Sum, use a dictionary to save the pair (number; index); use a variable called x for saving the difference between target and nums[i] and search x in the dict!
+bin, medium, 371, Sum of Two Integers, need to use XOR to make sum and AND shifted to the left by 1 to take the carry; repeat until carry is 0; for python only you need to use mask to ensure you have only 32bit
+math, medium, 400, Nth digit, calculate how many digits the number has; calculate what the number is; find out which digit in the number is we wanted
+
+
