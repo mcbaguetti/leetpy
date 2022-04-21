@@ -6,7 +6,7 @@
 
 I divided easy problems in:
 - part 1 - easiest, where I suggest beginning if you are noob like me,
-- part 2 - interesting, where there are some interesting problem, not so hard to implement if you understand
+- part 2 - more challenging, where there are some interesting problem, not so hard to implement if you understand
                     the structure of the problems
   
 Inside each part I categorized the problems with the specific topic/data structure I used to solve the problem
