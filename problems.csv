@@ -4,7 +4,9 @@ array, easy, 387, First Unique Character in a String, use .count() function to s
 array, easy, 349, Intersection of Two Arrays, use a dictionary to save first array then make intersection with the second one (can use set data structure)
 array, easy, 345, Reverse Vowels of a String, need two indexes: one to start at the array's beginning and one at the end; when idxs are aligned with two vowels you can swap them
 array, easy, 434, Number of Segments in a String, check spaces in the array: for each word increment an index; if you find a space continue the loop
+array, easy, 283, Move Zeroes, use two indexes: one called slow for pointing zeroes (increments when the pointer is not pointing zero) and the other called fast that increments every loop; swap when j points != 0 and i points 0
 binary_search, easy, 374, Guess Number Higher or Lower, use binary search
+hashmap, easy, 290, Word Pattern, use dictionary to match words in string s with character in pattern; use sets to check the length of unique characters and words
 hashmap, easy, 389, Find the Difference, use dictionary to count the strings and return the elem with value 1
 hashmap, easy, 409, Longest Palindrome, use dictionary to count the number of chars and return the even of all counted number (plus one if we have an odd counted char)
 hashmap, easy, 383, Ransom Note, use two dictionaries to count the occurrencies of the two char strings and then compare them to find the differencies
@@ -16,5 +18,3 @@ bin, easy, 342, Power of Four, convert to binary and see that a power of four ha
 hashmap, easy, 1, Two Sum, use a dictionary to save the pair (number; index); use a variable called x for saving the difference between target and nums[i] and search x in the dict!
 bin, medium, 371, Sum of Two Integers, need to use XOR to make sum and AND shifted to the left by 1 to take the carry; repeat until carry is 0; for python only you need to use mask to ensure you have only 32bit
 math, medium, 400, Nth digit, calculate how many digits the number has; calculate what the number is; find out which digit in the number is we wanted
-
-
