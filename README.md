@@ -11,3 +11,6 @@ I divided easy problems in:
   
 Inside each part I categorized the problems with the specific topic/data structure I used to solve the problem
 (array, stacks, hashmap, etc.), which sometimes could not be the best or the only way.
+
+I created another directory called "compendium" where I store valid information about some argument I need 
+to study or to review sometimes.
