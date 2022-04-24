@@ -7,3 +7,4 @@ argument I need to improve:
     - math
     - sorting
     - binary_search
+    - bit manipulation

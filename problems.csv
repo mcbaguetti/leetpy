@@ -19,6 +19,7 @@ stacks, easy, 20, Valid Parentheses, use an array that mimics the stack; save in
 bin, easy, 401, Binary Watch, generate all the times and convert them to two bin number (one for the hour and one for the min); the ones in the bin number are the led you must turn on
 bin, easy, 136, Single Number, xor all numbers and return the result
 bin, easy, 338, Counting Bits, the num of 1s in a number i = (num of 1s of i//2) + i % 2
+bin, easy, 191, Number of 1 Bits, use str(bin(n)).counts("1") or while (n!=0) increment var count and do n = n & (n - 1)
 bin, easy, 342, Power of Four, convert to binary and see that a power of four has always one 1 in the leftist digit; the others digits are even 0 (00; 0000; 000000)
 hash, easy, 1, Two Sum, use a dictionary to save the pair (number; index); use a variable called x for saving the difference between target and nums[i] and search x in the dict!
 hash, easy, 202, Happy Number, loop str(num) for going through all the num's digits; res = (sum all the squared digits) if res == 1 ==> True; else we save the sum in a dict and if we spot that we already have that in our dict ==> False
