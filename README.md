@@ -4,8 +4,8 @@
 
 **It is divided in three main directories: one for easy problems, medium problems and hard problems (loading).**
 
-I divided easy problems in:
-- part 1 - easiest, where I suggest beginning if you are noob like me,
+I divided each difficulty package in:
+- part 1 - a bit easier, where I suggest beginning if you are noob like me,
 - part 2 - more challenging, where there are some interesting problem, not so hard to implement if you understand
                     the structure of the problems
   

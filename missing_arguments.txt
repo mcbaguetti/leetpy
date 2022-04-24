@@ -1,0 +1,9 @@
+argument I am totally missing:
+    - linked lists / nodes
+    - trees
+
+argument I need to improve:
+    - various algorithms
+    - math
+    - sorting
+    - binary_search
