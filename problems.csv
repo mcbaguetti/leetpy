@@ -15,8 +15,11 @@ hashmap, easy, 13, Roman to Integer, use dictionary to map roman numbers to int 
 hashmap, easy, 415, Add Strings, use two dictionaries to map string numbers to int numbers and viceversa
 stacks, easy, 20, Valid Parentheses, use an array that mimics the stack; save in the stack the open brackets and delete them when you find that the opposite is on the top of the stack
 bin, easy, 401, Binary Watch, generate all the times and convert them to two bin number (one for the hour and one for the min); the ones in the bin number are the led you must turn on
+bin, easy, 136, Single Number, xor all numbers and return the result
 bin, easy, 342, Power of Four, convert to binary and see that a power of four has always one 1 in the leftist digit; the others digits are even 0 (00; 0000; 000000)
 hashmap, easy, 1, Two Sum, use a dictionary to save the pair (number; index); use a variable called x for saving the difference between target and nums[i] and search x in the dict!
 math, easy, 367, Valid Perfect Square, enumerate from 1 to i*i to find the perfect square;
+algorithm, easy, 169, Majority Element, for constant space complex use Boyer–Moore majority algorithm: use a count that increments if the majority==nums[i]; decrement it otherwise; if count==0 ==> majority=nums[i] and count==1
+algorithm, easy, 121, Best Time to Buy and Sell Stock, Kadane's algorithm - dynamic prog: one variable stores the answer and another one stores the current sum; at the end of every sum max(ans; cSum); if cSum < 0 ==> cSum==0
 bin, medium, 371, Sum of Two Integers, need to use XOR to make sum and AND shifted to the left by 1 to take the carry; repeat until carry is 0; for python only you need to use mask to ensure you have only 32bit
 math, medium, 400, Nth digit, calculate how many digits the number has; calculate what the number is; find out which digit in the number is we wanted
