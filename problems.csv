@@ -18,12 +18,14 @@ stacks, easy, 155, Min Stack, stack is a list of tuple (val; min_curr); def __in
 stacks, easy, 20, Valid Parentheses, use an array that mimics the stack; save in the stack the open brackets and delete them when you find that the opposite is on the top of the stack
 bin, easy, 401, Binary Watch, generate all the times and convert them to two bin number (one for the hour and one for the min); the ones in the bin number are the led you must turn on
 bin, easy, 136, Single Number, xor all numbers and return the result
+bin, easy, 190, Reverse Bits, convert the num in 32bit binary ==> '{:032b}'.format(n) then convert into a string and add to the starting position in the answer the last elem; if I can't use str or format I can use n & 1 for checking the last bit and then I have to shift to the left the res; also shift to the right n
 bin, easy, 338, Counting Bits, the num of 1s in a number i = (num of 1s of i//2) + i % 2
-bin, easy, 191, Number of 1 Bits, use str(bin(n)).counts("1") or while (n!=0) increment var count and do n = n & (n - 1)
+bin, easy, 191, Number of 1 Bits, use str(bin(n)).counts("1") or while (n!=0) increment var count and do n = n & (n - 1) which removes the rightest 1
 bin, easy, 342, Power of Four, convert to binary and see that a power of four has always one 1 in the leftist digit; the others digits are even 0 (00; 0000; 000000)
 hash, easy, 1, Two Sum, use a dictionary to save the pair (number; index); use a variable called x for saving the difference between target and nums[i] and search x in the dict!
 hash, easy, 202, Happy Number, loop str(num) for going through all the num's digits; res = (sum all the squared digits) if res == 1 ==> True; else we save the sum in a dict and if we spot that we already have that in our dict ==> False
 math, easy, 367, Valid Perfect Square, enumerate from 1 to i*i to find the perfect square;
+math, easy, 171, Excel Sheet Column Number, it's like a system with base 26: it's like converting hex or bin to dec but instead we have base 26 to dec
 algorithm, easy, 169, Majority Element, for constant space complex use Boyer–Moore majority algorithm: use a count that increments if the majority==nums[i]; decrement it otherwise; if count==0 ==> majority=nums[i] and count==1
 algorithm, easy, 121, Best Time to Buy and Sell Stock, Kadane's algorithm - dynamic prog: one variable stores the answer and another one stores the current sum; at the end of every sum max(ans; cSum); if cSum < 0 ==> cSum==0
 bin, medium, 371, Sum of Two Integers, need to use XOR to make sum and AND shifted to the left by 1 to take the carry; repeat until carry is 0; for python only you need to use mask to ensure you have only 32bit
