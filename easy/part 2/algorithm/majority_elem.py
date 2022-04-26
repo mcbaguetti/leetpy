@@ -24,7 +24,7 @@ Follow-up: Could you solve the problem in linear time and in O(1) space?"""
 
 
 # solution with O(n) time and space complexity
-def majorityElement(self, nums: List[int]) -> int:
+def majorityElement(nums):
     count_dict = {}
 
     for elem in nums:
@@ -38,7 +38,7 @@ def majorityElement(self, nums: List[int]) -> int:
 
 
 # solution with O(n) time and 0(1) space complexity
-def majorityElement(self, nums: List[int]) -> int:
+def majorityElement_v2(nums):
     majority = nums[0]
     count = 1
 

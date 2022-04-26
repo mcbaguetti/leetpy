@@ -18,7 +18,8 @@ Output: ["0:01","0:02","0:04","0:08","0:16","0:32","1:00","2:00","4:00","8:00"]
 Example 2:
 
 Input: turnedOn = 9
-Output: []"""
+Output: []
+"""
 
 
 # here the main challenge was to understand how it works a binary watch, after that it is really simple
