@@ -45,13 +45,14 @@ print(max_profit([7, 2, 6, 3, 1, 4]))
 
 
 # 0(n) time compl and 0(1) space compl
-def maxProfit(self, prices: List[int]) -> int:
+def maxProfit(prices):
+
     n = len(prices)
     ans = 0
-    curSum = 0
+    cur_sum = 0
     for i in range(n - 1):
-        curSum += prices[i + 1] - prices[i]
-        if curSum < 0:
-            curSum = 0
-        ans = max(ans, curSum)
+        cur_sum += prices[i + 1] - prices[i]
+        if cur_sum < 0:
+            cur_sum = 0
+        ans = max(ans, cur_sum)
     return ans
