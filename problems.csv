@@ -33,5 +33,5 @@ algorithm, easy, 121, Best Time to Buy and Sell Stock, Kadane's algorithm - dyna
 bin, medium, 371, Sum of Two Integers, need to use XOR to make sum and AND shifted to the left by 1 to take the carry; repeat until carry is 0; for python only you need to use mask to ensure you have only 32bit
 math, medium, 400, Nth digit, calculate how many digits the number has; calculate what the number is; find out which digit in the number is we wanted
 array, medium, 763, Partition Labels, Figure out the rightmost index first and use it to denote the start of the next section. Reset the left pointer at the start of each new section. Store the difference of right and left pointers + 1 as in the result for each section.
-
+stack, medium, 739, Daily Temperatures, use a monotonic stack to save temps and idxs; every loop save into the stack temp;idx and when you encounter a temp > temp on top of the stack save to ans the difference between the index popped out and the current index of the loop
 
