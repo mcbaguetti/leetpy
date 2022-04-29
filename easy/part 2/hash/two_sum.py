@@ -27,32 +27,13 @@ Output: [0,1]
 
 def two_sum(nums, target):
 
-    output = []
-    i = 0
     dictionary = {}
 
-    while i < len(nums):
+    for i, v in enumerate(nums):
+        if target - v in dictionary:
+            return [dictionary[target - v], i]
 
-        if nums[i] > target:
-            i += 1
-            continue
-
-        if nums[i] not in dictionary:
-            dictionary[nums[i]] = i
-            complem = target - nums[i]
-
-            if complem not in dictionary:
-                i += 1
-                continue
-
-            else:
-                j = dictionary[complem]
-                if j != i:
-                    output.append(i)
-                    output.append(j)
-                    return output
-
-        i += 1
+        dictionary[v] = i
 
 
 input_list = [3, 3]
