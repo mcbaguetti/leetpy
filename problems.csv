@@ -30,6 +30,7 @@ math, easy, 171, Excel Sheet Column Number, it's like a system with base 26: it'
 list, easy, 118, Pascal's Triangle, nested list are like multi dimensional arrays; need one list that generates every row and another one to store all the rows
 algorithm, easy, 169, Majority Element, for constant space complex use Boyer–Moore majority algorithm: use a count that increments if the majority==nums[i]; decrement it otherwise; if count==0 ==> majority=nums[i] and count==1
 algorithm, easy, 121, Best Time to Buy and Sell Stock, Kadane's algorithm - dynamic prog: one variable stores the answer and another one stores the current sum; at the end of every sum max(ans; cSum); if cSum < 0 ==> cSum==0
+bin, medium, 7, Reverse Integer, should use mask 0x7fffffff for preventing that we have more than 32bit integers; you should control that both at the start of the problem and at the end
 bin, medium, 371, Sum of Two Integers, need to use XOR to make sum and AND shifted to the left by 1 to take the carry; repeat until carry is 0; for python only you need to use mask to ensure you have only 32bit
 math, medium, 400, Nth digit, calculate how many digits the number has; calculate what the number is; find out which digit in the number is we wanted
 array, medium, 763, Partition Labels, Figure out the rightmost index first and use it to denote the start of the next section. Reset the left pointer at the start of each new section. Store the difference of right and left pointers + 1 as in the result for each section.
