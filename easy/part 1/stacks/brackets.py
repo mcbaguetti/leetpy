@@ -35,37 +35,28 @@
 # false
 
 
-def brackets(string):
+def brackets(s):
 
-    closed_list = ["}", "]", ")"]
-    opp_elem = ""
+    closed_list = {"}": "{", "]": "[", ")": "("}
     brack_list = []
+    bracket_dict = {"}": "{", "]": "[", ")": "("}  # closed_bracket: open_bracket
+    stack = []
 
-    if len(string) % 2 != 0:
-        return False
-
-    for elem in string:
-        if elem not in closed_list:
-            brack_list.append(elem)
+    for elem in s:
+        if elem not in bracket_dict:
+            stack.append(elem)
 
         else:
-            if elem == "}":
-                opp_elem = "{"
-            if elem == "]":
-                opp_elem = "["
-            if elem == ")":
-                opp_elem = "("
-
-            if brack_list and opp_elem == brack_list[len(brack_list) - 1]:
-                del brack_list[-1]
-
+            opp_elem = bracket_dict[elem]
+            if stack and opp_elem == stack[-1]:
+                del stack[-1]
             else:
                 return False
 
-    if brack_list.__len__() != 0:
+    if stack:
         return False
 
     return True
 
 
-print(brackets("()"))
+print(brackets("([)]"))
