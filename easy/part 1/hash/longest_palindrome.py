@@ -5,29 +5,45 @@
 # Letters are case sensitive, for example, "Aa" is not considered a palindrome here.
 
 
-def max_palindrome(string):
+def max_palindrome(s):
 
-    max_pal = 0
-    first = True
+    res = 1
     counts = {}
 
-    for char in string:
-        if char in counts:
-            counts[char] += 1
-        else:
-            counts[char] = 1
+    for char in s:
+        counts[char] = 1 + counts.get(char, 0)
 
+    print(counts)
     for elem in counts:
+        res += (counts[elem] // 2) * 2
 
-        if counts[elem] % 2 != 0 and first:
-            max_pal += counts[elem]
-            first = False
+    if res > len(s):
+        return res - 1
 
-        else:
-            max_pal += int(counts[elem] / 2) * 2
-
-    return max_pal
+    return res
 
 
 num = max_palindrome("acssssccbdra")
 print(num)
+
+
+def max_palindrome_v2(string):
+    res = 1
+    letters = {}
+
+    for l in string:
+        if l in letters:
+            letters[l] += 1
+
+            if letters[l] % 2 == 0:
+                res += 2
+        else:
+            letters[l] = 1
+
+    if res > len(string):
+        return res - 1
+
+    return res
+
+
+# print(max_palindrome_v2("sssscc"))
