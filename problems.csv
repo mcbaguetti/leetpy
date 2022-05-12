@@ -7,6 +7,7 @@ array, easy, 434, Number of Segments in a String, check spaces in the array: for
 array, easy, 268, Missing Number, enumerate all the numbers in the array; subtract index with elem of the array and return the final subtraction
 array, easy, 27, Remove Element, use two indexes like move zeroes
 array, easy, 283, Move Zeroes, use two indexes: one called slow for pointing zeroes (increments when the pointer is not pointing zero) and the other called fast that increments every loop; swap when j points != 0 and i points 0
+binary_search, easy, 704, Binary Search, use binary search
 binary_search, easy, 374, Guess Number Higher or Lower, use binary search
 binary_search, easy, 278, First Bad Version, use binary search: increment left if the condition is not satisfied or right = mid
 hash, easy, 242, Valid Anagram, use two dicts to store the values and check if they are equals; altern use one dict to increment the counts and another to decrement the counts; if all are == 0 --> true
