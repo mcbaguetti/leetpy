@@ -44,3 +44,4 @@ hash, medium, 49, Group Anagrams, use a dict to save (count_array: [list of word
 hash, medium, 347, Top K Frequent Elements, use a dict to count the occurencies of the nums array then save in an array of lists the nums where each index of the array is the count of the dict; at the end save in another array from the right to left until k == 0
 binary_search, medium, 74, Search a 2D Matrix, use two binary search: the first one for finding the row; the second one for finding the right column
 binary_search, medium, 240, Search a 2D Matrix II, first approach: from bottom to up and from left to right or the opposite; second approach: go through every row and use binary search in each row
+binary_search, medium, 875, Koko Eating Bananas, find max of piles; binary search for finding the min k <= than hours in input
