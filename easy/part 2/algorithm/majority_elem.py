@@ -54,3 +54,20 @@ def majorityElement_v2(nums):
             count = 1
 
     return majority
+
+
+# solution with O(n) time and 0(1) space complexity
+def majorityElement_v3(nums):
+    maj = nums[0]
+    count = 1
+
+    for n in nums[1:]:
+        if count == 0:
+            maj = n
+
+        if maj == n:
+            count += 1
+        else:
+            count -= 1
+
+    return maj
