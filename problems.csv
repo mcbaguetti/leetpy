@@ -50,3 +50,4 @@ binary_search, medium, 74, Search a 2D Matrix, use two binary search: the first 
 binary_search, medium, 240, Search a 2D Matrix II, first approach: from bottom to up and from left to right or the opposite; second approach: go through every row and use binary search in each row
 binary_search, medium, 875, Koko Eating Bananas, find max of piles; binary search for finding the min k <= than hours in input
 twopointers, medium, 167, Two Sum II, use two pointers as usual
+twopointers, medium, 15, 3Sum, sort the array; scan the array with an index and use two pointers (left and right) from that index and beyond; calculate the sum and add to the res if the sum == 0
