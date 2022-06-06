@@ -44,3 +44,28 @@ def reverse(x: int) -> int:
         return 0
 
     return int(num) * sign
+
+
+# small optimization
+def reverse2(x: int) -> int:
+    num = 0
+    sign = 1
+    mask = 2147483648
+
+    if x < 0:
+        sign = -1
+        x = -x
+
+    if x > mask:
+        return 0
+
+    while x != 0:
+        rem = x % 10
+        x //= 10
+
+        num = num * 10 + rem
+
+    if not num or num > mask:
+        return 0
+
+    return num * sign
