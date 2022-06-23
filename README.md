@@ -1,4 +1,4 @@
-# leetpy
+# Leetpy
 
 ###### A repository for learning and see solutions to some LeetCode problems in Python!
 
@@ -14,3 +14,10 @@ Inside each part I categorized the problems with the specific topic/data structu
 
 I created another directory called "compendium" where I store valid information about some argument I need 
 to study or to review sometimes.
+
+# Example
+[carbon](https://user-images.githubusercontent.com/37833294/175281545-a82a3596-90a3-428a-9628-52d6229be884.png)
+
+
+# Last Commit
+![GitHub last commit](https://img.shields.io/github/last-commit/mcbaguetti/leetpy)!
