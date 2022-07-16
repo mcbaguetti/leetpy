@@ -11,6 +11,7 @@ heap, easy, 1046, Last Stone Weight, use a max heap
 heap, easy, 973, K Closest Points to Origin, use a max heap with length k
 heap, easy, 703, Kth Largest Element in a Stream, create a minheap with length k; if val > minheap[0]: pop the min and push val
 tree, easy, 226, Invert Binary Tree, invert right with left node and recursively call the function until root == []
+tree, easy, 104, Maximum Depth of Binary Tree, dfs recursive or iterative (with stack[node; depth]) or bfs with deque
 binary_search, easy, 704, Binary Search, use binary search
 binary_search, easy, 374, Guess Number Higher or Lower, use binary search
 binary_search, easy, 278, First Bad Version, use binary search: increment left if the condition is not satisfied or right = mid
