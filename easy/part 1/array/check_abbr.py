@@ -45,8 +45,6 @@ def check_abbr(string, abbr):
                 return False
             i += num
             j += 1
-            print(i)
-            print(j)
 
     return True
 
