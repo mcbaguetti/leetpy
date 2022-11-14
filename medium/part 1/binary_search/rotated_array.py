@@ -32,7 +32,7 @@ def search_sorted_rotated(nums, target):
     if len(nums) == 1 and nums[l] == target:
         return l
 
-    if (nums[l] > nums[r]):
+    if nums[l] > nums[r]:
         while l <= r:
             mid = (l + r) // 2
             if nums[mid] > nums[r]:
@@ -59,5 +59,5 @@ def search_sorted_rotated(nums, target):
 
     return -1
 
-print(search_sorted_rotated([4,5,6,7,0,1,2], 0))
 
+print(search_sorted_rotated([4,5,6,7,0,1,2], 0))
