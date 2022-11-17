@@ -21,7 +21,7 @@ Constraints:
 import heapq
 
 
-# O(k + n) time compl
+# O(n) time compl
 def largest_elem(nums, k):
     heap = []
     n = 0
@@ -29,8 +29,8 @@ def largest_elem(nums, k):
     # O(n) time compl
     for elem in nums:
         heapq.heappush(heap, -1 * elem)
-
-    # 0(k) time compl
+    
+    # O(n) time compl
     while k > 0:
         n = heapq.heappop(heap)
         k -= 1
