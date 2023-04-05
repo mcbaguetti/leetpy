@@ -30,14 +30,13 @@ class Solution:
         1. Calculate the maximum depth of the left and right sides of the given node
         2. Determine the diameter at the given node and check if its the maximum
     """
-    def depth(self, root):
+    def depth(self, node):
         # check if the root is there
-        if not root:
+        if not node:
             return 0
 
         # Calculate maximum depth
-        left = self.depth(root.left)
-        right = self.depth(root.right)
+        left, right = self.depth(node.left), self.depth(node.right)
 
         # Calculate diameter
         if left + right > self.diameter:
