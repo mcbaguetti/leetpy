@@ -1,0 +1,77 @@
+name: Unit Testing
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  build:
+    # Linux
+    linux-testing:
+      name: Linux Unit Testing
+      runs-on: ubuntu-latest
+
+      steps:
+        - uses: actions/checkout@v3
+
+        - name: Set up Python 3.9
+          uses: actions/setup-python@v4
+          with:
+            python-version: 3.9
+
+        - name: Install dependencies
+          run: |  # $CONDA is an environment variable pointing to the root of the miniconda directory
+            $CONDA/bin/conda env update --file test-environment.yml --name base
+
+        - name: Test with pytest
+          run: |
+            conda install pytest
+            $CONDA/bin/pytest
+
+
+    # Windows
+    windows-testing:
+      name: Windows Unit Testing
+      runs-on: windows-latest
+
+      steps:
+        - uses: actions/checkout@v3
+
+        - name: Set up Python 3.9
+          uses: actions/setup-python@v4
+          with:
+            python-version: 3.9
+
+        - name: Install dependencies
+          run: |
+                  C:\Miniconda\condabin\conda.bat env update --file test-environment.yml --name base
+                  C:\Miniconda\condabin\conda.bat init powershell
+
+        - name: Test with pytest
+          run: |
+            C:\Miniconda\condabin\conda.bat activate base
+            C:\Miniconda\condabin\conda.bat install pytest
+
+
+    # MacOS
+    macOS-testing:
+      name: Mac OS Unit Testing
+      runs-on: macos-latest
+
+      steps:
+        - uses: actions/checkout@v3
+
+        - name: Set up Python 3.9
+          uses: actions/setup-python@v4
+          with:
+            python-version: 3.9
+
+        - name: Install dependencies
+          run: |  # $CONDA is an environment variable pointing to the root of the miniconda directory
+            $CONDA/bin/conda env update --file test-environment.yml --name base
+
+        - name: Test with pytest
+          run: |
+            conda install pytest
+            $CONDA/bin/pytest
