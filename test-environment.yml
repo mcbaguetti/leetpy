@@ -1,0 +1,34 @@
+name: test-leetpy
+channels:
+  - loop3d
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+
+  - geopandas=0.10
+  - pyqt=5.12
+  - rasterio=1.2
+  - shapely=1.8
+  - vtk=9.1
+
+  - xarray
+  - pyvista
+  - pyvistaqt
+  - vedo
+
+  - loopstructural
+
+  - cmocean
+  - colorcet
+  - mplstereonet
+
+  - laspy
+  - ezdxf
+  - lxml
+  - openpyxl
+  - pythreejs
+  - pyinstaller
+
+  - scipy
+  - matplotlib
